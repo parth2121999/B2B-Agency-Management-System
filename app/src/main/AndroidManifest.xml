@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.log">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".vieworder"></activity>
+        <activity
+            android:name=".splace_screen"
+            android:label="@string/title_activity_splace_screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".addcart"
+            android:label="cart"
+            android:parentActivityName=".addcart"/>
+
+        <activity android:name=".ProductDescription"
+            android:label="addcart"
+            android:parentActivityName=".ProductDescription"/>
+
+        <activity android:name=".ProductList"
+            android:label="ProductDesciption"
+            android:parentActivityName=".ProductList"/>
+
+        <activity
+            android:name=".Welcome"
+            android:label="ProductList"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Welcome_Salesman"
+            android:label="salesman"
+            android:parentActivityName=".Welcome"/>
+
+        <activity
+            android:name=".changepassword"
+            android:label="Chanage Password"
+            android:parentActivityName=".Welcome" />
+        <activity
+            android:name=".profile"
+            android:label="User Profile"
+            android:parentActivityName=".Welcome" />
+
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
